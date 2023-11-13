@@ -46,17 +46,17 @@ def openTaskFile():
     
 
   #icon
-Image_icon=PhotoImage(file="C:/My programs/To Do List/Images/task.png")
+Image_icon=PhotoImage(file="/Images/task.png")
 root.iconphoto(False,Image_icon)
 
 #top bar
-TopImage=PhotoImage(file="C:/My programs/To Do List/Images/topbar.png")
+TopImage=PhotoImage(file="/Images/topbar.png")
 Label(root,image=TopImage).pack()
 
-dockImage=PhotoImage(file="C:/My programs/To Do List/Images/dock.png")
+dockImage=PhotoImage(file="/Images/dock.png")
 Label(root,image=dockImage,bg="#32405b").place(x=30,y=25)
 
-noteImage=PhotoImage(file="C:/My programs/To Do List/Images/task.png")
+noteImage=PhotoImage(file="/Images/task.png")
 Label(root,image=noteImage,bg="#32405b").place(x=333,y=25)
 
 heading=Label(root,text= "ALL TASKS",font="arial 20 bold",fg="white",bg="#32405b")
@@ -89,7 +89,7 @@ scrollbar.config(command=listbox.yview)
 openTaskFile()
 
 #delete
-Delete_icon=PhotoImage(file="C:/My programs/To Do List/Images/delete.png")
+Delete_icon=PhotoImage(file="/Images/delete.png")
 Button(root,image=Delete_icon,bd=0,command=deleteTask).pack(side=BOTTOM,pady=13)
 
 root.mainloop()
